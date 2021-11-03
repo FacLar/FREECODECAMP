@@ -1,4 +1,3 @@
-
 #title {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-family: 'Lobster', cursive;
@@ -306,8 +305,8 @@ img {
   border-width: 1px !important;
 }
 
-.ms-5 {
-  margin-left: 3rem !important;
+.ms-0 {
+  margin-left: 0 !important;
 }
 
 .p-3 {
@@ -354,5 +353,11 @@ img {
 
 .rounded {
   border-radius: 0.25rem !important;
+}
+
+@media (min-width: 768px) {
+  .ms-md-5 {
+    margin-left: 3rem !important;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
