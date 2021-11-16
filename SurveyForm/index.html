@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+   
+    <link rel="stylesheet" href="./reducido.css">
+
+</head>
+<body>
+    <main id="main">
+        <div class="container-fluid m-0 pt-5 ps-5 pe-5">
+          <header class="header">
+                <h1 class="h1 text-center text-white" id="title">freeCodeCamp Survey Form</h1>
+                <p class="text-center text-white fs-5 opacity-75">Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <div>
+                <form id="survey-form" class="p-5 fs-5">
+                    <div class="mb-3">
+                    <label id="name-label" for="name" class="form-label text-white">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                    <label id="email-label" for="email" class="form-label text-white">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email">
+                    </div>
+                    <div class="mb-3">
+                    <label id="agbenumber-lebel" for="number" class="form-label text-white">Age (optional)</label>
+                    <input type="number" id="number" name="age" min="10" max="100" class="form-control" placeholder="Age">
+                    </div>
+                    <div class="mb-3" id="select-rol dropdown">
+                    <label for="Select-Rol" class="form-label text-white">Which option best describes your current role?</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Open this select menu</option>
+                        <option value="Student">Student</option>
+                        <option value="Full time job">Full time job</option>
+                        <option value="Full time learner">Full time learner</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Other">Other</option> 
+                    </select>
+                    </div>
+                    <div class="mb-3" id="Radios">
+                    <label for="Radios" class="form-label text-white">Would you recommend freeCodeCamp to a friend?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="user-recommend" id="user-recommend1" value="Definitely">
+                        <label class="form-check-label text-white" for="user-recommend1">Definitely</label> 
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="user-recommend" id="user-recommend2" value="Maybe">
+                        <label class="form-check-label text-white" for="user-recommend2">Maybe</label> 
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="user-recommend" id="user-recommend3" value="Not Sure">
+                        <label class="form-check-label text-white" for="user-recommend3">Not Sure</label> 
+                    </div>
+                    </div>
+                    <div class="mb-3" id="favorite-feature dropdown">
+                    <label for="favorite-feature" class="form-label text-white">What is your favorite feature of freeCodeCamp?</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open source">Open source</option>
+                    </select>  
+                    </div>
+                    <div class="mb-4" id="CheckBox">
+                    <label for="CheckBox" class="form-label text-white">What would you like to see improved? <span>(Check all that apply)</span></label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Front-end" id="prefer1">
+                        <label class="form-check-label text-white" for="prefer1">Front-end Projects</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Back-end" id="prefer2">
+                        <label class="form-check-label text-white" for="prefer2">Back-end Projects</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Data-Visualization" id="prefer3">
+                        <label class="form-check-label text-white" for="prefer3">Data Visualization</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Challenges" id="prefer4">
+                        <label class="form-check-label text-white" for="prefer4">Challenges</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Open-sourse-Comunnity" id="prefer5">
+                        <label class="form-check-label text-white" for="prefer5">Open Source Community</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Gitter-help-rooms" id="prefer6">
+                        <label class="form-check-label text-white" for="prefer6">Gitter help rooms</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Videos" id="prefer7">
+                        <label class="form-check-label text-white for="prefer7">Videos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="City-Meetups" id="prefer8">
+                        <label class="form-check-label text-white" for="prefer8">City Meetups</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Wiki" id="prefer9">
+                        <label class="form-check-label text-white" for="prefer9">Wiki</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Forum" id="prefer10">
+                        <label class="form-check-label text-white" for="prefer10">Forum</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="prefer" value="Additional-Courses" id="prefer11">
+                        <label class="form-check-label text-white" for="prefer11">Additional Courses</label>
+                    </div>
+
+                    </div>
+                    <div class="mb-4" id="textarea">
+                    <label for="textarea" class="text-white">Any comments or suggestions?</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Enter your comment here" id="floatingTextarea2" style="height: 130px"></textarea>
+                        <label for="floatingTextarea2">Enter your comment here</label>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 mb-3" id="Submit-button">
+                    <input class="btn btn-success btn-lg" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+            
+
+
+        </div>
+
+    </main>
+   
+  
+</body>
+</html>
